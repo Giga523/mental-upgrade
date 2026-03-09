@@ -24,26 +24,26 @@
             text-align: center;
         }
         
-        /* UPDATED: High-Impact Pre-Headline Badge */
+        /* High-Impact Pre-Headline Badge */
         .pre-headline {
-            background-color: #d90429; /* Bold red background */
-            color: #ffffff; /* White text for maximum contrast */
+            background-color: #d90429;
+            color: #ffffff;
             font-size: 22px;
-            font-weight: 900; /* Maximum boldness */
+            font-weight: 900;
             text-transform: uppercase;
             letter-spacing: 1.5px;
             padding: 10px 25px;
             margin-bottom: 25px;
             display: inline-block;
-            border-radius: 50px; /* Pill shape for a sleek badge look */
-            box-shadow: 0 5px 15px rgba(217, 4, 41, 0.4); /* Red glow effect */
-            border: 2px solid #8d021a; /* Darker red border to make it pop */
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(217, 4, 41, 0.4);
+            border: 2px solid #8d021a;
         }
 
         /* Updated Headline Styles */
         h1 {
             font-size: 38px; 
-            background-color: #0d1b2a; /* Dark background to make it pop */
+            background-color: #0d1b2a;
             color: #ffffff;
             padding: 25px;
             border-radius: 8px;
@@ -52,28 +52,15 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         }
         .highlight {
-            color: #ffc107; /* High-contrast yellow for important words */
+            color: #ffc107;
             font-weight: bold;
         }
 
-        .image-placeholder {
-            width: 100%;
-            max-width: 600px;
-            height: 350px;
-            background-color: #e9ecef;
-            border: 2px dashed #ced4da;
-            margin: 0 auto 30px auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #6c757d;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .image-placeholder img {
-            max-width: 100%;
-            height: auto;
-            display: none; 
+        /* The Pulse Animation */
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 4px 6px rgba(0,123,255,0.3); }
+            50% { transform: scale(1.03); box-shadow: 0 0 15px rgba(0,123,255,0.7); }
+            100% { transform: scale(1); box-shadow: 0 4px 6px rgba(0,123,255,0.3); }
         }
         
         /* Primary Button */
@@ -93,27 +80,12 @@
             width: 80%;
             max-width: 400px;
             box-shadow: 0 4px 6px rgba(0,123,255,0.3);
+            animation: pulse 2s infinite; /* Adds the subtle breathing effect */
         }
         .cta-button:hover {
             background-color: #0056b3;
-        }
-
-        /* Updated Secondary Button */
-        .cta-button-secondary {
-            display: inline-block;
-            background-color: transparent;
-            color: #007bff;
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: underline;
-            padding: 10px 20px;
-            margin: 10px 0 20px 0;
-            border: none;
-            cursor: pointer;
-            transition: color 0.3s;
-        }
-        .cta-button-secondary:hover {
-            color: #0056b3;
+            animation: none; /* Stops pulsing on hover so it feels solid to click */
+            transform: scale(1.02);
         }
 
         .copy-text {
@@ -171,10 +143,8 @@
         <img src="./synthid-removed-Gemini_Generated_Image_44su0j44su0j44su.png" alt="Brain Frequency Discovery Video" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); margin-bottom: 30px; cursor: pointer; display: block; margin-left: auto; margin-right: auto;">
     </a>
 
-    <a href="https://1rlu9.bemobtrcks.com/click" class="cta-button">Watch The Video Now</a>
-
     <div class="copy-text">
-    <p>If you have spent hours visualizing your dream life, creating vision boards, or repeating daily affirmations only to see <strong>zero results</strong> in your bank account or career, it is not your fault.</p>
+        <p>If you have spent hours visualizing your dream life, creating vision boards, or repeating daily affirmations only to see <strong>zero results</strong> in your bank account or career, it is not your fault.</p>
         
         <p>Recent neuro-scientific research has revealed why the Law of Attraction fails for 99% of people: <strong>It's a biological hardware problem.</strong></p>
 
@@ -185,9 +155,9 @@
         <p>But researchers have recently identified a specific <strong>6-minute daily audio frequency</strong> designed to stimulate this exact "Einstein pattern" in anyone. Over <strong>92,653 ordinary people</strong> are already using this simple listening routine to clear brain fog, unlock their true manifestation potential, and finally start seeing the financial and personal success they've been visualizing.</p>
 
         <p>Discover the surprising science behind this audio track and see how it works for yourself. <strong>Click the link below</strong> to watch a short presentation explaining the mechanism and how you can try it today.</p>
-</div>
+    </div>
 
-    <a href="https://1rlu9.bemobtrcks.com/click" class="cta-button-secondary">Click Here to Watch the Presentation</a>
+    <a href="https://1rlu9.bemobtrcks.com/click" class="cta-button">Click Here to Watch the Presentation</a>
 
     <div class="footer">
         <div class="footer-links">
@@ -204,7 +174,4 @@
 </div>
 
 </body>
-
 </html>
-
-
