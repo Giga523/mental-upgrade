@@ -1,72 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Hidden Success Pattern Discovery</title>
-    <style>
-        body { font-family: Arial, Helvetica, sans-serif; background-color: #f8f9fa; color: #333; line-height: 1.6; margin: 0; padding: 0; }
-        .container { max-width: 800px; margin: 40px auto; background: #ffffff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; }
-        .pre-headline { background-color: #d90429; color: #ffffff; font-size: 20px; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; padding: 10px 25px; margin-bottom: 20px; display: inline-block; border-radius: 50px; box-shadow: 0 5px 15px rgba(217, 4, 41, 0.4); border: 2px solid #8d021a; }
-        h1 { font-size: 32px; background-color: #0d1b2a; color: #ffffff; padding: 20px; border-radius: 8px; margin-bottom: 20px; line-height: 1.4; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
-        h2 { font-size: 20px; margin-bottom: 20px; }
-        .hero-image-container { display: block; margin-bottom: 20px; text-decoration: none; cursor: pointer; }
-        @keyframes pulse { 0% { transform: scale(1); box-shadow: 0 4px 6px rgba(0,123,255,0.3); } 50% { transform: scale(1.03); box-shadow: 0 0 15px rgba(0,123,255,0.7); } 100% { transform: scale(1); box-shadow: 0 4px 6px rgba(0,123,255,0.3); } }
-        .cta-button { display: inline-block; background-color: #007bff; color: #ffffff; font-size: 22px; font-weight: bold; text-decoration: none; padding: 15px 40px; border-radius: 5px; margin: 15px 0; transition: background-color 0.3s; border: none; cursor: pointer; width: 80%; max-width: 400px; box-shadow: 0 4px 6px rgba(0,123,255,0.3); animation: pulse 2s infinite; }
-        .cta-button:hover { background-color: #0056b3; animation: none; transform: scale(1.02); }
-        .copy-text { text-align: left; font-size: 18px; margin: 20px 0; }
-        .copy-text p { margin-bottom: 15px; }
-        .footer { margin-top: 40px; font-size: 12px; color: #6c757d; border-top: 1px solid #dee2e6; padding-top: 15px; }
-        .footer-links a { color: #6c757d; text-decoration: none; margin: 0 10px; }
-        .footer-links a:hover { text-decoration: underline; }
-        @media (max-width: 600px) { .container { margin: 20px; padding: 20px; } .pre-headline { font-size: 16px; padding: 8px 15px; } h1 { font-size: 24px; padding: 15px; } .cta-button { width: 100%; } }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Hidden Success Pattern Discovery</title>
+  <meta name="description" content="Watch the short presentation revealing why some people seem to enter a different level of focus, certainty, and success momentum." />
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #f5f7fb 0%, #eef3f9 100%);
+      color: #1d2a35;
+      line-height: 1.65;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 820px;
+      margin: 32px auto;
+      background: #ffffff;
+      padding: 36px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    .pre-headline {
+      background-color: #d90429;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      padding: 10px 22px;
+      margin-bottom: 18px;
+      display: inline-block;
+      border-radius: 50px;
+      box-shadow: 0 5px 15px rgba(217, 4, 41, 0.25);
+      border: 2px solid #8d021a;
+    }
+    h1 {
+      font-size: 34px;
+      background-color: #0d1b2a;
+      color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 16px;
+      line-height: 1.35;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    }
+    h2 {
+      font-size: 22px;
+      color: #33485a;
+      margin: 0 0 22px;
+      font-weight: 600;
+    }
+    .hero-image-container {
+      display: block;
+      margin-bottom: 22px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 4px 8px rgba(0,123,255,0.28); }
+      50% { transform: scale(1.03); box-shadow: 0 0 18px rgba(0,123,255,0.55); }
+      100% { transform: scale(1); box-shadow: 0 4px 8px rgba(0,123,255,0.28); }
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #007bff;
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 16px 40px;
+      border-radius: 7px;
+      margin: 18px 0 10px;
+      transition: background-color 0.3s;
+      border: none;
+      cursor: pointer;
+      width: 80%;
+      max-width: 420px;
+      box-shadow: 0 4px 6px rgba(0,123,255,0.3);
+      animation: pulse 2s infinite;
+    }
+    .cta-button:hover {
+      background-color: #0056b3;
+      animation: none;
+      transform: scale(1.02);
+    }
+    .copy-text {
+      text-align: left;
+      font-size: 18px;
+      margin: 18px 0;
+      color: #293947;
+    }
+    .copy-text p {
+      margin-bottom: 16px;
+    }
+    .bullet-box {
+      text-align: left;
+      background: #f7fbff;
+      border: 1px solid #d9e9f7;
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin: 24px 0 14px;
+    }
+    .bullet-box ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+    .bullet-box li {
+      margin-bottom: 10px;
+      font-size: 17px;
+    }
+    .micro-note {
+      font-size: 14px;
+      color: #596c7d;
+      margin-bottom: 10px;
+    }
+    .footer {
+      margin-top: 36px;
+      font-size: 12px;
+      color: #6c757d;
+      border-top: 1px solid #dee2e6;
+      padding-top: 15px;
+    }
+    .footer-links a {
+      color: #6c757d;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .container { margin: 16px; padding: 22px; }
+      .pre-headline { font-size: 15px; padding: 8px 14px; }
+      h1 { font-size: 26px; padding: 16px; }
+      h2 { font-size: 19px; }
+      .cta-button { width: 100%; font-size: 20px; }
+      .copy-text, .bullet-box li { font-size: 17px; }
+    }
+  </style>
 
-    <!-- BeMob Tracking -->
-    <script type="text/javascript">
-        !function(){
-            var a=document.createElement("script");
-            a.type="text/javascript",a.async=!0,
-            a.src="https://1rlu9.bemobtrcks.com/landing/457aea39-0d74-4997-89b2-ab5ede39146d?callback=REPLACE&rule=REPLACE&path=REPLACE&landing=REPLACE&"+window.location.search.substring(1);
-            var b=document.getElementsByTagName("script")[0];
-            b.parentNode.insertBefore(a,b)
-        }();
-    </script>
+  <!-- BeMob Tracking -->
+  <script type="text/javascript">
+    !function(){
+      var a=document.createElement("script");
+      a.type="text/javascript",a.async=!0,
+      a.src="https://1rlu9.bemobtrcks.com/landing/457aea39-0d74-4997-89b2-ab5ede39146d?callback=REPLACE&rule=REPLACE&path=REPLACE&landing=REPLACE&"+window.location.search.substring(1);
+      var b=document.getElementsByTagName("script")[0];
+      b.parentNode.insertBefore(a,b)
+    }();
+  </script>
 </head>
 <body>
 
 <div class="container">
-    <span class="pre-headline">Why Vision Boards Fail For 99% of People</span>
-    <h1>Scientists Accidentally Discovered a Hidden “Success Pattern” Inside Elon Musk’s Brain…</h1>
-    <h2>And a 6-Minute Audio May Be Able to Activate It in Ordinary People</h2>
+  <span class="pre-headline">A Different Way To Think About Success</span>
+  <h1>What if the people who create unusual wealth and momentum aren’t just working harder… but operating from a different mental state?</h1>
+  <h2>A short presentation reveals why some people seem to move with more focus, certainty, and opportunity than everyone else.</h2>
 
-    <a href="https://1rlu9.bemobtrcks.com/click" class="hero-image-container">
-        <img src="./synthid-removed-Gemini_Generated_Image_af0xsbaf0xsbaf0x.png" alt="Brain Flow State Activated" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); cursor: pointer;">
-    </a>
+  <a href="https://1rlu9.bemobtrcks.com/click" class="hero-image-container">
+    <img src="./synthid-removed-Gemini_Generated_Image_af0xsbaf0xsbaf0x.png" alt="Brain Flow State" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); cursor: pointer;">
+  </a>
 
-    <div class="copy-text">
-        <p>If you've spent years making vision boards, repeating affirmations, or trying to "manifest" success… but your bank account never changed, you're not alone.</p>
+  <div class="copy-text">
+    <p>Maybe you’ve already tried to improve your life through positive thinking, motivation, affirmations, or vision boards.</p>
 
-        <p>Researchers studying high-performing entrepreneurs discovered something unusual: a distinct neural pattern connecting multiple regions of the brain, allowing information to travel faster and more efficiently.</p>
+    <p>And maybe some of it helped for a little while. But deep down, it still felt like something important was missing.</p>
 
-        <p>For most people, this neural pathway remains weak or dormant. But scientists recently developed a specific 6-minute daily audio sequence that can stimulate this exact pattern. Thousands of people are now experimenting with it to clear brain fog and unlock deeper focus and creativity.</p>
+    <p>Because when real success starts happening for certain people, it often looks like more than effort alone. They seem sharper. More decisive. More locked in. They notice opportunities faster, act with more conviction, and stay in motion while everyone else hesitates.</p>
 
-        <p>Watch the short presentation to see how this works and how you can try it today.</p>
+    <p>That raises an interesting question:</p>
+
+    <p><strong>What if success has less to do with forcing results… and more to do with entering the right internal state first?</strong></p>
+
+    <p>The short presentation on the next page explores this idea through a simple “success pattern” that many people believe helps explain why high performers think, decide, and move differently.</p>
+  </div>
+
+  <div class="bullet-box">
+    <ul>
+      <li>Why some people stay stuck in overthinking while others seem to build momentum almost effortlessly</li>
+      <li>How focus, inner certainty, and emotional state may affect the results you create in the outside world</li>
+      <li>Why so many people are suddenly curious about brainwave-based tools for clarity, drive, and success</li>
+    </ul>
+  </div>
+
+  <div class="micro-note">Watch the short presentation and decide for yourself whether this could be the missing piece.</div>
+
+  <a href="https://1rlu9.bemobtrcks.com/click" class="cta-button">Watch The Presentation Now →</a>
+
+  <div class="footer">
+    <div class="footer-links">
+      <a href="./privacy.html">Privacy Policy</a> |
+      <a href="./terms.html">Terms of Service</a> |
+      <a href="./disclaimer.html">Disclaimer</a> |
+      <a href="./contact.html">Contact Us</a>
     </div>
-
-    <a href="https://1rlu9.bemobtrcks.com/click" class="cta-button">Watch The Discovery Here →</a>
-
-    <div class="footer">
-        <div class="footer-links">
-            <a href="./privacy.html">Privacy Policy</a> | 
-            <a href="./terms.html">Terms of Service</a> | 
-            <a href="./disclaimer.html">Disclaimer</a> | 
-            <a href="./contact.html">Contact Us</a>
-        </div>
-        <p style="margin-top: 10px;">
-            <strong>Disclaimer:</strong> This site is not part of Google or Google Inc., and is not endorsed by Google in any way. Information is for educational purposes only; individual results may vary.
-        </p>
-    </div>
+    <p style="margin-top: 10px;">
+      <strong>Disclaimer:</strong> This site is not part of Google or Google Inc., and is not endorsed by Google in any way. Information is for educational purposes only; individual results may vary.
+    </p>
+  </div>
 </div>
 
 </body>
